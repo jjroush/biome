@@ -2,6 +2,7 @@
 source: crates/biome_formatter_test/src/snapshot_builder.rs
 info: yaml/comment/map-3.yml
 ---
+
 # Input
 
 ```yml
@@ -54,39 +55,3 @@ foo1:
 
 foo2:
   - foo2```
-
-# Errors
-```
-map-3.yml:8:3 parse ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-  × Expected a block mapping entry but instead found '- foo
-    
-    foo2:
-      - foo2'.
-  
-     6 │   # - foo
-     7 │ 
-   > 8 │   - foo
-       │   ^^^^^
-   > 9 │ 
-  > 10 │ foo2:
-  > 11 │   - foo2
-       │   ^^^^^^
-    12 │ 
-    13 │   # first line
-  
-  i Expected a block mapping entry here.
-  
-     6 │   # - foo
-     7 │ 
-   > 8 │   - foo
-       │   ^^^^^
-   > 9 │ 
-  > 10 │ foo2:
-  > 11 │   - foo2
-       │   ^^^^^^
-    12 │ 
-    13 │   # first line
-  
-
-```

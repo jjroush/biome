@@ -2,6 +2,7 @@
 source: crates/biome_formatter_test/src/snapshot_builder.rs
 info: yaml/comment/sequence.yml
 ---
+
 # Input
 
 ```yml
@@ -61,36 +62,3 @@ info: yaml/comment/sequence.yml
    - e
 
 -  - a```
-
-# Errors
-```
-sequence.yml:7:4 parse ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-  × Expected a block sequence entry but instead found '- e
-    
-    -  - a'.
-  
-     5 │    # - c
-     6 │ 
-   > 7 │    - e
-       │    ^^^
-   > 8 │ 
-   > 9 │ -  - a
-       │ ^^^^^^
-    10 │ 
-    11 │    # - b
-  
-  i Expected a block sequence entry here.
-  
-     5 │    # - c
-     6 │ 
-   > 7 │    - e
-       │    ^^^
-   > 8 │ 
-   > 9 │ -  - a
-       │ ^^^^^^
-    10 │ 
-    11 │    # - b
-  
-
-```
